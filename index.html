@@ -146,7 +146,7 @@ body { max-width:480px; margin:0 auto; padding:0 0 32px }
       <div class="hdr-sub">Delta Exchange · BTC Options</div>
     </div>
   </div>
-  <div class="hdr-time">Updated<br>07 Jul 2026 · 15:40 IST</div>
+  <div class="hdr-time">Updated<br>07 Jul 2026 · 15:51 IST</div>
 </div>
 
 <!-- signal -->
@@ -207,6 +207,7 @@ body { max-width:480px; margin:0 auto; padding:0 0 32px }
       <div class="strat-stat"><span class="lbl">N</span>
         <span class="val">0</span></div>
     </div>
+    <span class="strat-open open-no">○ Flat</span>
   </div>
 
   <!-- D -->
@@ -221,6 +222,7 @@ body { max-width:480px; margin:0 auto; padding:0 0 32px }
       <div class="strat-stat"><span class="lbl">N</span>
         <span class="val">0</span></div>
     </div>
+    <span class="strat-open open-no">○ Flat</span>
   </div>
 </div>
 
@@ -238,6 +240,9 @@ body { max-width:480px; margin:0 auto; padding:0 0 32px }
         <span class="val">0%</span></div>
       <div class="strat-stat"><span class="lbl">N</span>
         <span class="val">0</span></div>
+      <div class="strat-stat" style="margin-left:8px">
+        <span class="strat-open open-no">○ Flat</span>
+      </div>
     </div>
   </div>
 </div>
@@ -245,8 +250,11 @@ body { max-width:480px; margin:0 auto; padding:0 0 32px }
 <!-- trade log tabs -->
 <div class="sec" style="margin-top:18px">Recent Trades</div>
 <div class="tabs" style="margin-bottom:0">
-  <button class="tab active" onclick="showTab('ta',this)">Strategy A</button>
-  <button class="tab"        onclick="showTab('tb',this)">Strategy B</button>
+  <button class="tab active" onclick="showTab('ta',this)">A</button>
+  <button class="tab"        onclick="showTab('tb',this)">B</button>
+  <button class="tab"        onclick="showTab('tc',this)">C</button>
+  <button class="tab"        onclick="showTab('td',this)">D</button>
+  <button class="tab"        onclick="showTab('te',this)">E</button>
 </div>
 
 <div id="ta" class="tab-pane active">
@@ -256,6 +264,24 @@ body { max-width:480px; margin:0 auto; padding:0 0 32px }
   </div>
 </div>
 <div id="tb" class="tab-pane">
+  <div class="trades-card" style="border-radius:0 0 var(--r) var(--r);margin-top:0;border-top:none">
+    <div class="trades-head"><span>Date</span><span>Type</span><span>Result</span><span>P&amp;L</span></div>
+    <tr><td colspan="4" class="empty">No trades yet</td></tr>
+  </div>
+</div>
+<div id="tc" class="tab-pane">
+  <div class="trades-card" style="border-radius:0 0 var(--r) var(--r);margin-top:0;border-top:none">
+    <div class="trades-head"><span>Date</span><span>Type</span><span>Result</span><span>P&amp;L</span></div>
+    <tr><td colspan="4" class="empty">No trades yet</td></tr>
+  </div>
+</div>
+<div id="td" class="tab-pane">
+  <div class="trades-card" style="border-radius:0 0 var(--r) var(--r);margin-top:0;border-top:none">
+    <div class="trades-head"><span>Date</span><span>Type</span><span>Result</span><span>P&amp;L</span></div>
+    <tr><td colspan="4" class="empty">No trades yet</td></tr>
+  </div>
+</div>
+<div id="te" class="tab-pane">
   <div class="trades-card" style="border-radius:0 0 var(--r) var(--r);margin-top:0;border-top:none">
     <div class="trades-head"><span>Date</span><span>Type</span><span>Result</span><span>P&amp;L</span></div>
     <tr><td colspan="4" class="empty">No trades yet</td></tr>
